@@ -1,0 +1,121 @@
+@font-face {
+  font-family: mono-space;
+  src: url(Space_Mono/SpaceMono-Regular.ttf);
+}
+::placeholder {
+  font-family: mono-space;
+  color: hsl(184, 14%, 56%);
+  font-size: 20px;
+}
+body {
+  background: hsl(185, 41%, 84%);
+  font-family: "mono-space";
+  font-weight: 700px;
+  font-size: 16px;
+  background-size: cover;
+  margin-top: 80px;
+}
+input:not(.custom, .btn) {
+  background-repeat: no-repeat;
+  background-color: hsl(189, 41%, 97%);
+  height: 40px;
+  width: 90%;
+  border-radius: 5px;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 24px;
+}
+
+input:focus {
+  outline: 0px;
+}
+input[type="text"].dollar {
+  background-image: url("images/icon-dollar.svg");
+  background-position: center;
+  background-position-x: 15px;
+}
+input[type="text"].dollar:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+input[type="text"].person {
+  background-image: url("images/icon-person.svg");
+  background-position: center;
+  background-position-x: 15px;
+}
+.grid-container {
+  display: grid;
+  height: 100px;
+  align-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+.grid-container div {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  padding: 10px 8px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.tip .top {
+  background-color: hsl(172, 67%, 45%);
+}
+.custom {
+  border: none;
+  text-align: right;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.custom:hover {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+
+.grid-container > div:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+#label {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  align-items: center;
+}
+#label #error {
+  display: none;
+  color: red;
+}
+.box {
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 65%;
+  padding: 34px;
+  border-radius: 10px;
+  margin: auto;
+  gap: 2rem;
+}
+.right-side-bar {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 7px;
+  height: 350px;
+}
+.number-area {
+  margin-left: 30px;
+}
+.btn {
+  height: 40px;
+  border-radius: 5px;
+  width: 85%;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.btn:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+
+@media screen and (max-width: 500px) {
+  .box {
+    grid-template-columns: 1fr;
+  }
+}
