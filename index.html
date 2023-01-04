@@ -19,7 +19,7 @@
         <label for="bill">Bill</label><br />
         <input
           class="dollar"
-          type="text"
+          type="number"
           name="bill"
           id="dollar"
           placeholder="0"
@@ -27,13 +27,13 @@
 
         <label for="select tip ">Select Tip %</label>
         <div class="grid-container">
-          <div>5%</div>
-          <div>10%</div>
-          <div>15%</div>
-          <div>25%</div>
-          <div>50%</div>
+          <div class="button">5%</div>
+          <div class="button">10%</div>
+          <div class="button">15%</div>
+          <div class="button">25%</div>
+          <div class="button">50%</div>
 
-          <input class="custom" type="text" placeholder="Custom" />
+          <input class="custom" type="number" placeholder="Custom" />
         </div>
         <br />
 
@@ -44,7 +44,12 @@
         <!-- <label for="cant be zero" style="padding-left: 70px"
           >Can't be zero</label
         ><br /> -->
-        <input class="person" type="text" name="no of people" placeholder="0" />
+        <input
+          class="person"
+          type="number"
+          name="no of people"
+          placeholder="0"
+        />
       </div>
 
       <div class="right-side-bar">
