@@ -75,7 +75,9 @@ input[type="text"].person {
 .custom:hover {
   outline: 2px solid hsl(172, 67%, 45%);
 }
-
+.custom::placeholder {
+  text-align: center;
+}
 .grid-container > div:hover {
   background-color: hsl(172, 67%, 45%);
 }
